@@ -39,6 +39,7 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            margin-top: 20px;
         }
         button:hover {
             background-color: #45a049;
@@ -53,34 +54,117 @@
         .incorrect {
             color: red;
         }
+        .section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Grade 6 Mathematics Year-End Mock Exam</h1>
         <form id="examForm">
-            <div class="question">
-                <h2>Section A: Number and Operations</h2>
-                <p>1. Calculate: 3.45 + 2.67 - 1.89</p>
-                <input type="number" step="0.01" id="q1" required>
+            <div class="section">
+                <h2>Section A: Number and Operations (25 marks)</h2>
+                <div class="question">
+                    <p>1. Calculate: 3.45 + 2.67 - 1.89 (3 marks)</p>
+                    <input type="number" step="0.01" id="q1" required>
+                </div>
+                <div class="question">
+                    <p>2. Simplify the fraction: 36/48 (2 marks)</p>
+                    <input type="text" id="q2" required>
+                </div>
+                <div class="question">
+                    <p>3. Convert 3/5 to a percentage. (2 marks)</p>
+                    <input type="number" id="q3" required>
+                </div>
+                <div class="question">
+                    <p>4. Find 15% of 80. (3 marks)</p>
+                    <input type="number" id="q4" required>
+                </div>
+                <div class="question">
+                    <p>5. If the ratio of boys to girls in a class is 3:5, and there are 24 girls, how many boys are there? (5 marks)</p>
+                    <input type="number" id="q5" required>
+                </div>
+                <div class="question">
+                    <p>6. Solve: 7x - 3 = 25 (5 marks)</p>
+                    <input type="number" step="0.1" id="q6" required>
+                </div>
+                <div class="question">
+                    <p>7. Order the following from smallest to largest: 0.75, 3/4, 70%, 0.8 (5 marks)</p>
+                    <input type="text" id="q7" placeholder="Use commas to separate your answers" required>
+                </div>
             </div>
-            <div class="question">
-                <p>2. Simplify the fraction: 36/48</p>
-                <input type="text" id="q2" required>
+
+            <div class="section">
+                <h2>Section B: Geometry and Measurement (30 marks)</h2>
+                <div class="question">
+                    <p>8. Calculate the perimeter of a rectangle with length 8 cm and width 5 cm. (3 marks)</p>
+                    <input type="number" id="q8" required>
+                </div>
+                <div class="question">
+                    <p>9. Calculate the area of a rectangle with length 8 cm and width 5 cm. (3 marks)</p>
+                    <input type="number" id="q9" required>
+                </div>
+                <div class="question">
+                    <p>10. Find the volume of a cuboid with length 4 cm, width 3 cm, and height 5 cm. (4 marks)</p>
+                    <input type="number" id="q10" required>
+                </div>
+                <div class="question">
+                    <p>11. A circular pizza has a diameter of 30 cm. Calculate its circumference. (Use π = 3.14) (5 marks)</p>
+                    <input type="number" step="0.01" id="q11" required>
+                </div>
+                <div class="question">
+                    <p>12. In a triangle ABC, angle A = 45°, angle B = 60°. What is the measure of angle C? (3 marks)</p>
+                    <input type="number" id="q12" required>
+                </div>
+                <div class="question">
+                    <p>13. Convert 2.5 kg to grams. (2 marks)</p>
+                    <input type="number" id="q13" required>
+                </div>
+                <div class="question">
+                    <p>14. A car travels 240 km in 3 hours. What is its average speed in km/h? (5 marks)</p>
+                    <input type="number" id="q14" required>
+                </div>
             </div>
-            <div class="question">
-                <p>3. Convert 3/5 to a percentage.</p>
-                <input type="number" id="q3" required>
+
+            <div class="section">
+                <h2>Section C: Data and Statistics (20 marks)</h2>
+                <div class="question">
+                    <p>15. The following are test scores of 7 students: 85, 92, 78, 95, 88, 90, 83</p>
+                    <p>a) Calculate the mean score. (3 marks)</p>
+                    <input type="number" step="0.01" id="q15a" required>
+                    <p>b) What is the range of the scores? (2 marks)</p>
+                    <input type="number" id="q15b" required>
+                </div>
+                <div class="question">
+                    <p>16. In a survey of 50 students' favorite colors: Red: 15, Blue: 20, Green: 10, Yellow: 5</p>
+                    <p>What percentage of students chose Blue as their favorite color? (10 marks)</p>
+                    <input type="number" id="q16" required>
+                </div>
+                <div class="question">
+                    <p>17. If you roll a fair six-sided die, what is the probability of rolling an even number? Express as a fraction. (5 marks)</p>
+                    <input type="text" id="q17" required>
+                </div>
             </div>
-            <div class="question">
-                <h2>Section B: Geometry and Measurement</h2>
-                <p>8. Calculate the perimeter of a rectangle with length 8 cm and width 5 cm.</p>
-                <input type="number" id="q4" required>
+
+            <div class="section">
+                <h2>Section D: Problem Solving (25 marks)</h2>
+                <div class="question">
+                    <p>18. A recipe for 4 people requires 200g of flour. How much flour would be needed to make the same recipe for 6 people? (8 marks)</p>
+                    <input type="number" id="q18" required>
+                </div>
+                <div class="question">
+                    <p>19. A rectangular garden is 15m long and 10m wide. A path 1m wide is built around the inside edge of the garden. Calculate the area of the path. (8 marks)</p>
+                    <input type="number" id="q19" required>
+                </div>
+                <div class="question">
+                    <p>20. John bought a shirt that was on sale for 20% off. If he paid $32 for the shirt, what was its original price? (9 marks)</p>
+                    <input type="number" step="0.01" id="q20" required>
+                </div>
             </div>
-            <div class="question">
-                <p>9. Find the volume of a cuboid with length 4 cm, width 3 cm, and height 5 cm.</p>
-                <input type="number" id="q5" required>
-            </div>
+
             <button type="submit">Submit</button>
         </form>
         <div id="result"></div>
@@ -93,8 +177,31 @@
             q1: 4.23,
             q2: "3/4",
             q3: 60,
-            q4: 26,
-            q5: 60
+            q4: 12,
+            q5: 14.4,
+            q6: 4,
+            q7: "70%,0.75,3/4,0.8",
+            q8: 26,
+            q9: 40,
+            q10: 60,
+            q11: 94.2,
+            q12: 75,
+            q13: 2500,
+            q14: 80,
+            q15a: 87.29,
+            q15b: 17,
+            q16: 40,
+            q17: "1/2",
+            q18: 300,
+            q19: 44,
+            q20: 40
+        };
+
+        const markDistribution = {
+            q1: 3, q2: 2, q3: 2, q4: 3, q5: 5, q6: 5, q7: 5,
+            q8: 3, q9: 3, q10: 4, q11: 5, q12: 3, q13: 2, q14: 5,
+            q15a: 3, q15b: 2, q16: 10, q17: 5,
+            q18: 8, q19: 8, q20: 9
         };
 
         const examForm = document.getElementById('examForm');
@@ -107,11 +214,11 @@
             let score = 0;
             let incorrectAnswers = [];
 
-            for (let i = 1; i <= 5; i++) {
-                const questionId = `q${i}`;
-                const userAnswer = document.getElementById(questionId).value;
-                if (userAnswer == correctAnswers[questionId]) {
-                    score += 20;
+            for (let questionId in correctAnswers) {
+                const userAnswer = document.getElementById(questionId).value.trim().toLowerCase();
+                const correctAnswer = correctAnswers[questionId].toString().toLowerCase();
+                if (userAnswer === correctAnswer) {
+                    score += markDistribution[questionId];
                 } else {
                     incorrectAnswers.push(questionId);
                 }
@@ -124,7 +231,7 @@
                 reviewBtn.onclick = function() {
                     let reviewHtml = "<h3>Incorrect Answers:</h3>";
                     incorrectAnswers.forEach(id => {
-                        const questionNumber = id.substring(1);
+                        const questionNumber = id.replace('q', '').replace('a', '.a').replace('b', '.b');
                         reviewHtml += `<p>Question ${questionNumber}: Your answer: ${document.getElementById(id).value}, Correct answer: ${correctAnswers[id]}</p>`;
                     });
                     reviewDiv.innerHTML = reviewHtml;
